@@ -3,7 +3,9 @@ project(AhoCorasick)
 
 enable_testing()
 
+add_subdirectory("cmake")
 add_subdirectory("external_src")
+
 add_subdirectory("src")
 add_subdirectory("test")
 

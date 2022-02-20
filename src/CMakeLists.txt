@@ -9,6 +9,9 @@ file(GLOB_RECURSE SOURCES "*.cpp" "*h")
 # Build static library from sources
 add_library(${PROJECT_NAME} STATIC ${SOURCES})
 
+# Add Options
+enable_code_coverage(${PROJECT_NAME})
+
 # Include header files
 target_include_directories(${PROJECT_NAME} PUBLIC "${AhoCorasick_SOURCE_DIR}/include")
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})

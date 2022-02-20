@@ -9,6 +9,9 @@ file(GLOB_RECURSE SOURCES "*.cpp")
 # Build test executables from sources
 add_executable(${PROJECT_NAME} ${SOURCES})
 
+# Add Options
+enable_code_coverage(${PROJECT_NAME})
+
 # Link libraries
 target_link_libraries(${PROJECT_NAME} AhoCorasickLib)
 target_link_libraries(${PROJECT_NAME} gtest_main)
