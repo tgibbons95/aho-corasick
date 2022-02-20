@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <queue>
+#include <memory>
 
 namespace CSE_584A
 {
