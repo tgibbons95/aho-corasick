@@ -14,6 +14,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -52,7 +53,22 @@ This project requires at least C++14 because of calls to std::make_unique
 
 ### Installation
 
-_A few example installations are provided for compilers clang, gcc, minGW, and msvc. _
+A few example installations are provided for compilers [clang](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-clang.sh), [gcc](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-gcc.sh), [minGW](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-minGW.sh), and [msvc](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-msvc.sh).
+
+Running any of these scripts will create a build and install directory with a subdirectory with the chosen compiler. The install should look like the following
+
+* include
+  * AhoCorasick.h
+* lib
+  * AhoCorasickLib.lib
+* test
+  * AhoCorasickTest.exe
+  
+### Usage
+
+To run simply place the corpus file `hg38_part.txt` and `pat[1-5].txt` in the same directory as the executable and then kick off the executable. If these files aren't included, then it will just run against two smaller test case inputs.
+
+./AhoCorasickTest.exe
 
 
 
