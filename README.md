@@ -55,7 +55,7 @@ This project requires at least C++14 because of calls to std::make_unique
 
 A few example installations are provided for compilers [clang](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-clang.sh), [gcc](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-gcc.sh), [minGW](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-minGW.sh), and [msvc](https://github.com/wustl-cse584/homework-1-problem-4-ThomasGibbonsIV/blob/master/build-msvc.sh).
 
-Running any of these scripts will create a build and install directory with a subdirectory with the chosen compiler. The install should look like the following
+Running any of these scripts will create a build and install directory with a subdirectory with the chosen compiler. The install should look like the following (example done with Windows)
 
 * include
   * AhoCorasick.h
