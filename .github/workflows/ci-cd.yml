@@ -83,7 +83,7 @@ jobs:
       run: |
         mkdir ${{github.workspace}}/build/code-coverage
         lcov --capture --directory . -o tmp_coverage.info 
-        lcov --remove tmp_coverage.info -o ${{github.workspace}}/build/code-coverage/main_coverage.info '/usr/lib/*' '/usr/include/*' '*ExternalSource/*'
+        lcov --remove tmp_coverage.info -o ${{github.workspace}}/build/code-coverage/main_coverage.info '/usr/lib/*' '/usr/include/*' '*external_src/*' '*test/*'
         genhtml ${{github.workspace}}/build/code-coverage/main_coverage.info -o ${{github.workspace}}/build/code-coverage/coverage --function-coverage --demangle-cpp --no-sort --title "CSE 546T Computational Geometry Test Results"
 
     - if: ${{ matrix.platform == 'ubuntu' && matrix.build_type == 'Debug'}}

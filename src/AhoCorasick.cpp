@@ -24,29 +24,19 @@ namespace CSE_584A
       switch (c)
       {
          case 'A':
-            transition = Alphabet::ALPHABET_A;
-            break;
          case 'a':
             transition = Alphabet::ALPHABET_A;
             break;
          case 'C':
-            transition = Alphabet::ALPHABET_C;
-            break;
          case 'c':
             transition = Alphabet::ALPHABET_C;
             break;
          case 'G':
-            transition = Alphabet::ALPHABET_G;
-            break;
          case 'g':
             transition = Alphabet::ALPHABET_G;
             break;
          case 'T':
-            transition = Alphabet::ALPHABET_T;
-            break;
          case 't':
-            transition = Alphabet::ALPHABET_T;
-            break;
          default:
             transition = Alphabet::ALPHABET_T;
             break;
@@ -60,31 +50,21 @@ namespace CSE_584A
       switch (c)
       {
       case 'A':
-         compliment = 'T';
-         break;
       case 'a':
-         compliment = 't';
+         compliment = c + 't' - 'a';
          break;
       case 'C':
-         compliment = 'G';
-         break;
       case 'c':
-         compliment = 'g';
+         compliment = c + 'g' - 'c';
          break;
       case 'G':
-         compliment = 'C';
-         break;
       case 'g':
-         compliment = 'c';
+         compliment = c + 'c' - 'g';
          break;
       case 'T':
-         compliment = 'A';
-         break;
       case 't':
-         compliment = 'a';
-         break;
       default:
-         compliment = 'a';
+         compliment = c + 'a' - 't';
          break;
       }
       return compliment;
