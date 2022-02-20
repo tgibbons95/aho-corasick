@@ -1,3 +1,5 @@
 input/
 out/
 .vs/
+build/
+install/
